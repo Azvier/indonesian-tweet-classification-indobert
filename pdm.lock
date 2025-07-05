@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:054e4e0f4d0349b58ae053752f40bcd6b98c5a0c834e3fad264745452e64ca4d"
+content_hash = "sha256:bbe557ed968eb31df8c13ae0d5872421ee34a03086ca0923b870df181e2b733e"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
@@ -279,6 +279,17 @@ groups = ["default"]
 files = [
     {file = "idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"},
     {file = "idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9"},
+]
+
+[[package]]
+name = "indonlp"
+version = "0.3.4"
+requires_python = ">=3.7,<4.0"
+summary = "Simple python library with zero additional dependencies to make your Indonesian NLP project easier."
+groups = ["default"]
+files = [
+    {file = "indoNLP-0.3.4-py3-none-any.whl", hash = "sha256:26050978c6bfcade606545e208278fa2ba98c50d7dc3db7b686df9b98a0e730f"},
+    {file = "indoNLP-0.3.4.tar.gz", hash = "sha256:c09d48a9e2d0320c88b95ed285955f30fe2e5aee6719bf7110cab9e6491465d5"},
 ]
 
 [[package]]
@@ -1086,6 +1097,16 @@ files = [
     {file = "safetensors-0.5.3-cp38-abi3-win32.whl", hash = "sha256:cfc0ec0846dcf6763b0ed3d1846ff36008c6e7290683b61616c4b040f6a54ace"},
     {file = "safetensors-0.5.3-cp38-abi3-win_amd64.whl", hash = "sha256:836cbbc320b47e80acd40e44c8682db0e8ad7123209f69b093def21ec7cafd11"},
     {file = "safetensors-0.5.3.tar.gz", hash = "sha256:b6b0d6ecacec39a4fdd99cc19f4576f5219ce858e6fd8dbe7609df0b8dc56965"},
+]
+
+[[package]]
+name = "sastrawi"
+version = "1.0.1"
+summary = "Library for stemming Indonesian (Bahasa) text"
+groups = ["default"]
+files = [
+    {file = "Sastrawi-1.0.1-py2.py3-none-any.whl", hash = "sha256:ac3d1f442ae8f33fd0f59387eb33a1a5121241f028c318c60820f26bd032d93b"},
+    {file = "Sastrawi-1.0.1.zip", hash = "sha256:62badb523e6e273f92eb6d53f5f3d4c0aa9ffcf1ceba69ab3dba5b7a0da02c56"},
 ]
 
 [[package]]
