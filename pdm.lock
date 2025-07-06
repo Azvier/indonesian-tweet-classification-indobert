@@ -5,10 +5,30 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:a61801a21b3553d8fe5e53f7dbb9ac7536005eaff00a7bcff7ff6d7e1a78a230"
+content_hash = "sha256:623a053fd6244cb4ee7d326e7940add39613a49ba40e1bec5d6037a03e583ed0"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
+
+[[package]]
+name = "accelerate"
+version = "1.8.1"
+requires_python = ">=3.9.0"
+summary = "Accelerate"
+groups = ["default"]
+dependencies = [
+    "huggingface-hub>=0.21.0",
+    "numpy<3.0.0,>=1.17",
+    "packaging>=20.0",
+    "psutil",
+    "pyyaml",
+    "safetensors>=0.4.3",
+    "torch>=2.0.0",
+]
+files = [
+    {file = "accelerate-1.8.1-py3-none-any.whl", hash = "sha256:c47b8994498875a2b1286e945bd4d20e476956056c7941d512334f4eb44ff991"},
+    {file = "accelerate-1.8.1.tar.gz", hash = "sha256:f60df931671bc4e75077b852990469d4991ce8bd3a58e72375c3c95132034db9"},
+]
 
 [[package]]
 name = "aiohappyeyeballs"
@@ -1624,6 +1644,23 @@ dependencies = [
     "safetensors>=0.4.3",
     "tokenizers<0.22,>=0.21",
     "tqdm>=4.27",
+]
+files = [
+    {file = "transformers-4.53.1-py3-none-any.whl", hash = "sha256:c84f3c3e41c71fdf2c60c8a893e1cd31191b0cb463385f4c276302d2052d837b"},
+    {file = "transformers-4.53.1.tar.gz", hash = "sha256:da5a9f66ad480bc2a7f75bc32eaf735fd20ac56af4325ca4ce994021ceb37710"},
+]
+
+[[package]]
+name = "transformers"
+version = "4.53.1"
+extras = ["torch"]
+requires_python = ">=3.9.0"
+summary = "State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow"
+groups = ["default"]
+dependencies = [
+    "accelerate>=0.26.0",
+    "torch>=2.1",
+    "transformers==4.53.1",
 ]
 files = [
     {file = "transformers-4.53.1-py3-none-any.whl", hash = "sha256:c84f3c3e41c71fdf2c60c8a893e1cd31191b0cb463385f4c276302d2052d837b"},
