@@ -17,6 +17,7 @@ dependencies = [
     "ipywidgets>=8.1.7",
     "datasets>=3.6.0",
     "torch>=2.7.1",
+    "accelerate>=1.8.1",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"

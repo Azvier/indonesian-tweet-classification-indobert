@@ -5,10 +5,30 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:9b3b0b4f84c5200a8ca446e5b7bbb91183a8fa69e1d51ee974401dd7bce51ff0"
+content_hash = "sha256:b9b7c5bb271e5b34c79716500d64dbca75e026c138fff26d4391952a947d9d26"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
+
+[[package]]
+name = "accelerate"
+version = "1.8.1"
+requires_python = ">=3.9.0"
+summary = "Accelerate"
+groups = ["default"]
+dependencies = [
+    "huggingface-hub>=0.21.0",
+    "numpy<3.0.0,>=1.17",
+    "packaging>=20.0",
+    "psutil",
+    "pyyaml",
+    "safetensors>=0.4.3",
+    "torch>=2.0.0",
+]
+files = [
+    {file = "accelerate-1.8.1-py3-none-any.whl", hash = "sha256:c47b8994498875a2b1286e945bd4d20e476956056c7941d512334f4eb44ff991"},
+    {file = "accelerate-1.8.1.tar.gz", hash = "sha256:f60df931671bc4e75077b852990469d4991ce8bd3a58e72375c3c95132034db9"},
+]
 
 [[package]]
 name = "aiohappyeyeballs"
