@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:df6453e31e516c329fc790235a7ef512e6e5b11cec9991a81059907c9dafad9e"
+content_hash = "sha256:615129e2ab08b590dc189f137cefcaf20dbdf660b4708b876177a2e3d532b8a5"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
@@ -125,6 +125,22 @@ groups = ["default"]
 files = [
     {file = "attrs-25.3.0-py3-none-any.whl", hash = "sha256:427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3"},
     {file = "attrs-25.3.0.tar.gz", hash = "sha256:75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b"},
+]
+
+[[package]]
+name = "bitsandbytes"
+version = "0.46.1"
+requires_python = ">=3.9"
+summary = "k-bit optimizers and matrix multiplication routines."
+groups = ["default"]
+dependencies = [
+    "numpy>=1.17",
+    "torch<3,>=2.2",
+]
+files = [
+    {file = "bitsandbytes-0.46.1-py3-none-manylinux_2_24_aarch64.whl", hash = "sha256:21b349f776d04c6c1380405961081de29c84f49640b79d3d199b6d719818da84"},
+    {file = "bitsandbytes-0.46.1-py3-none-manylinux_2_24_x86_64.whl", hash = "sha256:b0ee4a204fb926d4eae02bc2f5468ae3c11c011cfa849a4c771d4c6b201f57ae"},
+    {file = "bitsandbytes-0.46.1-py3-none-win_amd64.whl", hash = "sha256:9f6f61376bd0e9780c5dc4ddee7d1f52cb10fe8034a1ea588611f4e8b87eb6a7"},
 ]
 
 [[package]]
